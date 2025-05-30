@@ -7,14 +7,15 @@ public class LogIn {
 
         Scanner form = new Scanner(System.in);
         System.out.print("Ingresa tu nombre de usuario: ");
-        String nombreUs = form.nextLine();
+        String nameUS = form.nextLine();
         System.out.print("Ingresa tu contraseña: ");
         String password = form.nextLine();
         form.close();
-        if (nombreUs.equals("acpp2510") && password.equals("p@ss1234")){
+        if (nameUS.equals("acpp2510") && password.equals("p@ss1234")){
             System.out.print("Acceso concedido");
         } else {
             System.out.print("Nombre de usuario o contraseña incorrecta");
         }
+
     }
 }
